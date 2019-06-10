@@ -33,7 +33,7 @@ npm run lint
 
 ### Deploying (into AWS, Linode, etc.) after building
 ```
-rsync -avshe ssh --progress ./dist/* <username>@<hostname>:/path/to/your/serer/host/directory
+rsync -avshe ssh --progress ./dist/* <username>@<hostname>:/path/to/your/server/host/directory
 ```
 
 ### Customize configuration
