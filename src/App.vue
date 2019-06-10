@@ -1,6 +1,9 @@
 <template>
   <LoadingLogo v-if="loading" @ready="loading = false" />
-  <Layout v-else/>
+  <transition v-else name="component-fade">
+    <Layout/>
+  </transition>
+  
 </template>
 
 <script>
@@ -24,10 +27,17 @@ export default {
 <style>
 body {
   background-color: #1c313a;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #ffffff;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 </style>
