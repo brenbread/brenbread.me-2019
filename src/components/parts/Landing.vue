@@ -1,6 +1,7 @@
 <template>
     <!-- Start landing page text element at 0% opacity  -->
-    <div id="landing" v-anime="{ opacity: 0 }">
+    <!-- <div id="landing" v-anime="{ loop: false, duration: 2000, easing: 'linear' }"> -->
+    <div id="landing">
         <span id="msg-1">Hi there I'm Bren!</span>
         <br />
         <span id="msg-2">I'm a Computer Engineering student @ SJSU + currently interning @ McAfee.</span>
@@ -30,19 +31,12 @@ export default {
     mounted() {
         const targets = this.$el;
         this
-            .$anime
-            .timeline()
-            .add({
+            .$anime({
                 targets,
-                duration: 1,
-                opacity: 0,
-                easing: 'linear'
-            })
-            .add({
-                targets,
-                duration: 1000,
-                opacity: 1,
-                easing: 'linear'
+                translateY: [-500, 0],
+                delay: 500,
+                duration: 2000,
+                easing: 'easeOutExpo'
             })
     }
 }
@@ -57,6 +51,7 @@ export default {
   align-items: center;
   align-content: center;
   font-family: 'Roboto Mono', monospace;
+  /* opacity: 0; */
 }
 
 body {
