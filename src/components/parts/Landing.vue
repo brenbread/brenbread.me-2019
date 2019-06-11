@@ -33,7 +33,7 @@ export default {
         this
             .$anime({
                 targets,
-                translateY: [-500, 0],
+                translateY: [-2160, 0],
                 delay: 500,
                 duration: 2000,
                 easing: 'easeOutExpo'
