@@ -1,13 +1,16 @@
 import Vue from 'vue'
-import '@inkline/inkline/dist/inkline.css'
-import Inkline from '@inkline/inkline'
+import VueMaterial from 'vue-material'
+import { MdButton, MdContent, MdTabs } from 'vue-material/dist/components'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default-dark.css'
 
-// import 'babel-polyfill'
 import App from './App.vue'
-// import 'vuetify/dist/vuetify.min.css'
 require('vue-ionicons/ionicons.css')
 
-Vue.use(Inkline)
+Vue.use(VueMaterial)
+Vue.use(MdButton)
+Vue.use(MdContent)
+Vue.use(MdTabs)
 
 Vue.config.productionTip = false
 

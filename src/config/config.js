@@ -6,7 +6,7 @@ module.exports = {
         Twitch: 'https://twitch.tv/brenbread',
     },
 
-    bgColor: '#1c313a',
-    navColor: '#455a64',
-    prColor: '#718792',
+    bgColor: '#000a12',
+    navColor: '#78909C',
+    boxColor: '#263238',
 };

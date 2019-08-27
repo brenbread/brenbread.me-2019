@@ -3,7 +3,6 @@
   <transition v-else name="component-fade">
     <Layout/>
   </transition>
-  
 </template>
 
 <script>
@@ -25,12 +24,26 @@ export default {
 </script>
 
 <style>
+html {
+    background-color: #000a12 !important;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body {
-  background-color: #1c313a;
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+  /*
+  MAIN COLORS;
+  #263238
+  #000a12
+  #4f5b62
+  */
+  font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
   color: #ffffff;
   text-align: center;
   height: 100vh;
@@ -39,5 +52,14 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  overflow-y: scroll;
+}
+
+a {
+  color: #78909C !important;
+  text-decoration: none;
+}
+a :hover {
+    text-decoration: none;
 }
 </style>
