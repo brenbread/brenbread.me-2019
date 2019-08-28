@@ -12,6 +12,7 @@
     "animejs": "^3.0.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "^2.6.5",
+    "lodash.template": ">=4.5.0",
     "vivus": "^0.4.4",
     "vue": "^2.6.6",
     "vue-animejs": "^2.1.1",
