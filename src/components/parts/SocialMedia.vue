@@ -1,5 +1,8 @@
 <template>
 <div>
+    <a :href="lnk_linkedin" target="_blank">
+      <LinkedIn id="social" title="LinkedIn" w="30px" h="30px"/>  
+    </a>
     <a :href="lnk_github" target="_blank">
         <GitHub id="social" title="GitHub" w="30px" h="30px"/>
     </a>
@@ -8,9 +11,6 @@
     </a>
     <a :href="lnk_twitch" target="_blank">
       <Twitch id="social" title="Twitch" w="30px" h="30px"/>  
-    </a>
-    <a :href="lnk_linkedin" target="_blank">
-      <LinkedIn id="social" title="LinkedIn" w="30px" h="30px"/>  
     </a>
 </div>
 </template>

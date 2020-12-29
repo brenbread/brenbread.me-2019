@@ -5,15 +5,15 @@
     <div id="landing">
         <span id="msg">Hi there, I'm Bren!</span>
         <br />
-        <span id="msg">I'm a Computer Engineering graduate from SJSU (Summer 2019).</span>
+        <span id="msg">I graduated with a BS in Computer Engineering from SJSU.</span>
         <br />
-        <span id="msg">This past summer, I interned @ McAfee doing QA automation.</span>
+        <span id="msg">I have industry experience in QA automation, testing methodologies, and have a high attention to detail.</span>
         <br />
-        <span id="msg">I have experience with full-stack web development, embedded development, and QA automation.</span>
+        <span id="msg">I also have experience with full-stack web development and embedded development as well.</span>
         <br />
-        <span id="msg">I like rhythm games (mostly Bemani), music, mechanical keyboards, the occasional anime, and 🍛 <a href="https://twitter.com/brenbread_/status/1129478927523598337" target="_blank">CURRY</a> 🍛</span>
+        <span id="msg">On the side, I like rhythm games (mostly Bemani), music, mechanical keyboards, playing the guitar, the occasional anime, and 🍛 <a href="https://twitter.com/brenbread_/status/1129478927523598337" target="_blank">CURRY</a> 🍛!!</span>
         <br />
-        <span id="msg">This website is still under construction! Slowly reworking it... Expect more soon 👀</span>
+        <span id="msg"><b>Currently looking for opportunities</b>, so drop me a message <a :href="lnk_linkedin" target="_blank">here</a> if you're interested in talking!</span>
         <br />
         <SocialMedia/>
     </div>
@@ -24,6 +24,9 @@
 import VueAnime from 'vue-animejs';
 import Vue from 'vue';
 import SocialMedia from './SocialMedia';
+
+// links
+import socialMedia from '../../config/config.js';
 
 Vue.use(VueAnime);
 
@@ -44,6 +47,13 @@ export default {
                 duration: 2000,
                 easing: 'easeOutExpo'
             })
+    },
+
+    data: function() {
+        return {
+            // LinkedIn link for landing
+            lnk_linkedin: socialMedia.socialMedia.LinkedIn,
+        }
     }
 }
 </script>
