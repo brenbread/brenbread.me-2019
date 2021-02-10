@@ -13,7 +13,7 @@
             <br />
             <span>I also have experience with full-stack web development and embedded development.</span>
             <br />
-            <span>On the side, I like rhythm games (mostly Bemani), music, mechanical keyboards, playing the guitar, the occasional anime, and 🍛 <a href="https://twitter.com/brenbread_/status/1129478927523598337" target="_blank">CURRY</a> 🍛!!</span>
+            <span>On the side, I like rhythm games (mostly Bemani), music, <a :href="lnk_keyboard" target="_blank">mechanical keyboards</a>, <a :href="lnk_guitar" target="_blank">playing the guitar</a>, the occasional anime, and 🍛 <a :href="lnk_curry" target="_blank">CURRY</a> 🍛!!</span>
             <br />
             <span>Not looking for opportunities at the moment.</span>
             <br />
@@ -54,7 +54,10 @@ export default {
     data: function() {
         return {
             // LinkedIn link for landing
-            lnk_linkedin: socialMedia.socialMedia.LinkedIn
+            lnk_linkedin: socialMedia.socialMedia.LinkedIn,
+            lnk_curry: "https://twitter.com/brenbread_/status/1129478927523598337",
+            lnk_keyboard: "https://www.youtube.com/watch?v=15utdCplTo0",
+            lnk_guitar: "https://www.youtube.com/watch?v=Cvog6wZnLr4"
         }
     }
 }
